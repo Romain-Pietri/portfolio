@@ -1,0 +1,127 @@
+.container_principal {
+    position: relative;
+    background-color: #00BFFF;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    height: 350px; /* Supprimez la valeur fixe de la hauteur */
+    width: 300px; /* Supprimez la valeur fixe de la largeur */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+h3{
+    margin-top: -10px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #dddddd;   
+    color : #dddddd 
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    font-size: 17px;
+    font-weight: bold;
+    color : #dddddd
+}
+.image{
+    width: 300px; /* Largeur souhaitée */
+    height: 200px; /* Hauteur souhaitée */
+    overflow: hidden; /* Pour cacher la partie de l'image qui dépasse */
+    border-radius: 10px;
+}
+.date{
+    margin-top: -3px;
+    width: 200px;
+    height: 60px;
+    border-radius: 50%;
+    color : #dddddd;
+   
+      
+    
+}
+  img{
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    object-fit: cover; /* Pour ajuster et couper l'image */
+  }
+
+  .l {
+    margin-right: calc(30vw  - 10px);
+    
+  }
+  
+  .r {
+    margin-left: calc(30vw - 10px);
+    
+  }
+  
+  
+  .dot-line {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+  
+  .dot-line li {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: -60px; /* Ajustez cette valeur pour définir la distance fixe entre les points */
+  }
+  
+
+  
+  .dot-line li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  
+  .dot-line li:first-child:before {
+    top: 205px;
+  }
+  
+  .dot-line li:last-child:before {
+    top: auto;
+    bottom: 0;
+  }
+  
+  .line {
+    position: absolute;
+    top: 0;
+    
+    left: 50%;
+    width: 5px;
+    height: 144.5vh;
+    background-color: #222222;
+    transform: translateX(-50%);
+    z-index: 0;
+    top: 205px;
+  }
+  
+  body {
+    margin: 10px;
+    padding: 10px;
+    background-color: #02081a;
+    
+  }
+  
